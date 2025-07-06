@@ -50,8 +50,8 @@ const ItemForm = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        // "http://localhost:3000/api/v1/items/postItem",
-      `{API_BASE_URL}/items/postItem`,
+        
+      `${API_BASE_URL}/items/postItem`,
         {
           method: "POST",
           headers: {
