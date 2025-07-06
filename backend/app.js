@@ -12,7 +12,6 @@ const itemRoutes = require('./routes/itemRoute') ;
 //middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173', // local dev
     process.env.FRONTEND_URL // deployed React site
   ],
   credentials: true,
