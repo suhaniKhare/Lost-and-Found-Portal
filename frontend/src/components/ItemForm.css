@@ -1,0 +1,130 @@
+/* Post Item Container */
+.post-item-container {
+  background-color: #f5f7fc;
+  min-height: calc(100vh - 56px); /* Adjust based on navbar height */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card Styling */
+.post-item-card {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(58, 50, 82, 0.1);
+  overflow: hidden;
+}
+
+.post-item-header {
+  background: linear-gradient(135deg, #7ca4dc 0%, #b194d8 100%);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: none;
+}
+
+.post-item-header h2 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.post-item-form {
+  padding: 1.5rem;
+}
+
+/* Form Elements */
+.form-group-custom {
+  margin-bottom: 1.75rem;
+}
+
+.form-label-custom {
+  color: #4f5b8c;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-input-custom,
+.form-select-custom {
+  background-color: #f8f9fa;
+  border: 1px solid #d5b8ec;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #3a3252;
+  transition: all 0.3s ease;
+}
+
+.form-input-custom:focus,
+.form-select-custom:focus {
+  border-color: #7ca4dc;
+  box-shadow: 0 0 0 0.25rem rgba(124, 164, 220, 0.25);
+  background-color: white;
+}
+
+.form-file-custom {
+  padding: 0.5rem;
+}
+
+.form-file-custom::file-selector-button {
+  background-color: #f0f5ff;
+  border: 1px solid #7ca4dc;
+  border-radius: 4px;
+  padding: 0.375rem 0.75rem;
+  margin-right: 1rem;
+  color: #4f5b8c;
+  transition: all 0.2s ease;
+}
+
+.form-file-custom::file-selector-button:hover {
+  background-color: #e2e9f7;
+}
+
+/* Submit Button */
+.submit-button {
+  background: linear-gradient(135deg, #7ca4dc 0%, #b194d8 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 164, 220, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Message Styling */
+.form-message {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.form-message.success {
+  background-color: rgba(124, 164, 220, 0.15);
+  color: #4f5b8c;
+  border: 1px solid #7ca4dc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-item-container {
+    padding: 1rem;
+  }
+  
+  .post-item-form {
+    padding: 1rem;
+  }
+}

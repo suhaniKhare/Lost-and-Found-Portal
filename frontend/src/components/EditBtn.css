@@ -1,0 +1,19 @@
+/* EditBtn.css */
+.edit-btn {
+  background-color: #e6f7ff;
+  color: #4f5b8c;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #d0ebff;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,16 @@
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* For hover effects on navbar links */
+.nav-link:hover {
+  color: #7ca4dc !important;
+}
+
+/* For the search button hover effect */
+.btn-outline-light:hover {
+  background-color: #7ca4dc !important;
+  border-color: #7ca4dc !important;
+  color: #3a3252 !important;
+}

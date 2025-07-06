@@ -1,0 +1,29 @@
+.tile-square {
+  aspect-ratio: 1/1;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.tile-square:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

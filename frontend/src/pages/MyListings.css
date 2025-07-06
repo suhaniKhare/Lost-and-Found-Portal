@@ -1,0 +1,143 @@
+/* Main Container */
+.my-listings-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Content Area */
+.my-listings-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header Section */
+.my-listings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #d5b8ec;
+}
+
+.my-listings-header h2 {
+  color: #3a3252;
+  font-weight: 600;
+  margin: 0;
+}
+
+.new-listing-btn {
+  background: linear-gradient(135deg, #7ca4dc 0%, #b194d8 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.new-listing-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 164, 220, 0.3);
+  color: white;
+}
+
+/* Loading State */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.loading-spinner p {
+  color: #4f5b8c;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 0.35rem solid #c4d9f0;
+  border-top-color: #7ca4dc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.empty-listings {
+  background-color: white;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(79, 91, 140, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.empty-icon {
+  font-size: 3.5rem;
+  color: #b194d8;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.empty-listings h3 {
+  color: #4f5b8c;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.empty-listings p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #7ca4dc 0%, #b194d8 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(124, 164, 220, 0.3);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .my-listings-content {
+    padding: 1.5rem;
+  }
+  
+  .my-listings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .empty-listings {
+    padding: 2rem 1rem;
+  }
+}

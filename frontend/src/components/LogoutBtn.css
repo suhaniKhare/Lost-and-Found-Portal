@@ -1,0 +1,40 @@
+/* Logout Button */
+.logout-btn {
+  background-color: #4f5b8c !important;
+  border: none !important;
+}
+
+.logout-btn:hover {
+  background-color: #7ca4dc !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(124, 164, 220, 0.3) !important;
+}
+
+.logout-btn:active {
+  background-color: #3a3252 !important;
+  transform: translateY(0);
+}
+
+/* Modal styling */
+.modal-backdrop-custom {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Cancel button hover */
+.btn-outline-secondary:hover {
+  background-color: #f8f9fa !important;
+  border-color: #dee2e6 !important;
+  color: #6c757d !important;
+}
+
+/* Danger button hover */
+.btn-danger:hover {
+  background-color: #c82333 !important;
+  border-color: #bd2130 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.btn-danger:active {
+  transform: translateY(0);
+}
