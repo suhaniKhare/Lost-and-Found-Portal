@@ -12,6 +12,8 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -33,7 +35,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/api/v1/auth/register", {
+      const res = await fetch(`${API_BASE_URL}/auth/register`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",

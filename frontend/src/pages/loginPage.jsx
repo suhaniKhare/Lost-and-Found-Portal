@@ -13,6 +13,8 @@ import { Link, useNavigate } from "react-router-dom";
 import AuthImagePattern from "../components/AuthImagePattern";
 import "../pages/loginPage.css";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 function Login() {
   const [formData, setFormData] = useState({
     email: "",
@@ -36,7 +38,7 @@ function Login() {
     setMessage("");
 
     try {
-      const res = await fetch("http://localhost:3000/api/v1/auth/login", {
+      const res = await fetch(`${API_BASE_URL}/auth/login`, {
         method: "POST",
         headers: {
           "content-type": "application/json",

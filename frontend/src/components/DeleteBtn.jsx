@@ -18,7 +18,7 @@ function DeleteBtn({ itemId }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `${API_BASE_URL}/deleteItem/${itemId}`,
+        `${API_BASE_URL}/items/deleteItem/${itemId}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       

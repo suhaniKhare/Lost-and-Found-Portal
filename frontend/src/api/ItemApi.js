@@ -20,7 +20,7 @@ export const fetchItems = async (filters = {}) => {
     if (filters.type) params.append("type", filters.type);
 
     const response = await axios.get(
-      `${API_BASE_URL}/getItems?${params.toString()}`,
+      `${API_BASE_URL}/items/getItems?${params.toString()}`,
       getAuthHeader()
     );
     return response.data.items || []; // Always return an array
@@ -33,7 +33,7 @@ export const fetchItems = async (filters = {}) => {
 export const fetchUserItems = async () => {
   try {
     const response = await axios.get(
-      `${API_BASE_URL}/myItems`,
+      `${API_BASE_URL}/items/myItems`,
       getAuthHeader()
     );
     return response.data.items || [];
@@ -46,7 +46,7 @@ export const fetchUserItems = async () => {
 export const fetchSingleItem = async (itemId) => {
   try {
     const response = await axios.get(
-      `${API_BASE_URL}/${itemId}`,
+      `${API_BASE_URL}/items/${itemId}`,
       getAuthHeader()
     );
     if (!response.data.item) {
@@ -65,7 +65,7 @@ export const searchItemsByKeyword = async (keyword, filters = {}) => {
     if (filters.type) params.append("type", filters.type);
     
     const response = await axios.get(
-      `${API_BASE_URL}/getitemsonsearch?${params.toString()}`,
+      `${API_BASE_URL}/items/getitemsonsearch?${params.toString()}`,
       getAuthHeader()
     );
     return response.data.items || [];
