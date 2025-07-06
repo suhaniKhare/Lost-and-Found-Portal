@@ -14,7 +14,7 @@ app.use(cors({
   origin: [
     process.env.FRONTEND_URL // deployed React site
   ],
-  credentials: true,
+  // credentials: true,
 }));
 
 app.use(express.json()) ;
@@ -22,6 +22,9 @@ app.use(express.static('public')) ; //serve static files from the 'public' direc
 
 app.use("/api/v1/auth" , authRoutes) ;
 app.use("/api/v1/items" , itemRoutes) ;
+app.use("/" , (req , res) => {
+  res.send("Lost and Found Backend running...") ;
+})
 
 
 const PORT = process.env.PORT || 3001 ;
